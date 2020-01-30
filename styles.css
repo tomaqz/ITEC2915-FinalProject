@@ -1,0 +1,185 @@
+/*Final Project - style sheet
+Thomas A. Quiroz
+*/
+
+/*reset styles */
+article, body, div, footer, header, h1, h2, h3, padding, video
+{
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+img, video
+{
+		max-width: 100%;
+		height: auto;
+		width: auto;
+}
+
+/*body and page*/
+body
+{
+	background-color: #88b9c2;
+	text-align: left;
+	font-family:  Arial, Helvetica, sans-serif;
+}
+.container
+{
+	width: 75%;
+	margin: 0 auto;
+	
+	position: relative;
+	top: 1em;
+	
+}
+header
+{
+	background-color: white;
+	background: linear-gradient(90deg,rgb(161,158,141),white);
+	/*height: 35%;*/
+}
+h1
+{
+	text-align: center;
+}
+h2 
+{
+	margin-bottom: 2%;
+	font-style: bold;
+	text-align: left;
+	
+}
+article
+{
+	margin: 0 auto;
+	padding: 1.5em;
+	background: ivory;
+	overflow: auto;
+}
+/*site navigation*/
+nav.sitenavigation
+{
+
+	color: #34180f;
+	background-color: #edab37;
+	text-align: center;
+}
+nav.sitenavigation li
+{
+	display: inline-block;
+	margin: 0.4em 0.6em;
+	font-size: 1em;
+}
+nav.sitenavigation a:link
+{
+	text-decoration: none;
+	color: black;
+}
+nav.sitenavigation a:visted
+{
+	color: #744f42;
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus
+{
+	color: blue;
+}
+social-media-buttons
+{
+	margin: 0.5em 0.5em;
+}
+nav ul, nav div, nav iframe
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+/*main*/
+/*article
+{
+	overflow: auto;
+}
+*/
+figure
+{
+	width: 35%;
+	margin-left: 1em;
+	float: right;
+}
+/*aside element*/
+.subjects
+{
+	text-align: center;
+	font-size: 1.2em;
+	margin: 1em 0;
+}
+.subjects p
+{
+	margin: 0 0.4em;
+	padding: 0.2em 0.4em;
+	border: 1.5px solid black;
+	display: inline-block;
+	cursor: pointer;
+}
+/*table styling*/
+table
+{
+	width: 90%;
+	margin: 0 auto;
+	border: 3px solid black;
+}
+th, td
+{
+	border: 1px solid black;
+	padding: 0.5em;
+}
+th
+{
+	background-color: #ddd;
+}
+.history-stuff th
+{
+	color: black;
+	background-color: white;
+}
+.tech-stuff th
+{
+	color: black;
+	background-color: white;
+}
+.psych-stuff th
+{
+	color: black;
+	background-color: white;
+}
+.history-stuff, .tech-stuff, .psych-stuff
+{
+	display: none;
+}
+.show
+{
+	display: block;
+}
+/*footer stuffs*/
+footer
+{
+	clear: right;
+	text-align: center;
+	margin-top: 3%;
+}
+/*small screen/tablet styles*/
+@media screen and (min-width: 460px), print
+{
+	article 
+	{
+		padding: 2%
+	}
+	
+}
+/*print styles*/
+@media print
+{
+	body, h1, article, footer
+	{
+		color: rgb(0,0,0);
+		background: rgb(255,255,255);
+	}
+}
